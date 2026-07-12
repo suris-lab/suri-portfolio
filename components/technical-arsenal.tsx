@@ -43,7 +43,7 @@ export function TechnicalArsenal() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-12">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            05 — Technical Arsenal
+            04 — Technical Arsenal
           </p>
         </div>
 

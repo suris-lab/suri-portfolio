@@ -50,7 +50,7 @@ export function Projects() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-16 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            04 — Selected Works
+            02 — Selected Works
           </p>
           <p className="max-w-xs font-mono text-xs uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
             Brand, CRM, analytics, and integrated growth across regional organizations.

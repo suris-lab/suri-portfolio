@@ -36,7 +36,7 @@ export function DesignGallery() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-16 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            Design Archive
+            03 — Design Archive
           </p>
           <h2 className="max-w-3xl font-serif text-4xl leading-[1] tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Visual craft, ready for{' '}

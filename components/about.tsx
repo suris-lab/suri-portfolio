@@ -39,7 +39,7 @@ export function About() {
     >
       <div className="mx-auto max-w-[1600px]">
         <p className="mb-16 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          03 — About
+          01 — About
         </p>
 
         <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr]">

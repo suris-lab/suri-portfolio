@@ -87,7 +87,7 @@ export function Experience() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-16">
           <p className="mb-8 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            06 — Experience
+            05 — Experience
           </p>
           <h2 className="max-w-2xl font-serif text-4xl leading-[1] tracking-tight text-foreground sm:text-5xl md:text-6xl">
             From design craft to{' '}
