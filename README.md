@@ -1,14 +1,16 @@
-# Suri Slai Portfolio
+# Shan Lai Portfolio
 
-Personal portfolio website built with Next.js, TypeScript, and Vercel-ready defaults.
+Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and a Three.js hero treatment.
 
 ## Update Content
 
-Most portfolio content lives in:
+Content is component-local:
 
-- `src/data/portfolio.ts`
-
-Update that file for profile links, experience, projects, metrics, and principles. Replace placeholder experience after copying the latest LinkedIn details into the data shape.
+- `components/about.tsx` for positioning, disciplines, and stats
+- `components/projects.tsx` for selected work
+- `components/experience.tsx` for career history
+- `components/contact.tsx` for contact links and the mailto form
+- `components/hero.tsx` for the opening hero copy
 
 ## Run Locally
 
@@ -32,13 +34,11 @@ Vercel will install dependencies and run `npm run build` automatically.
 
 - `app/page.tsx` controls the page structure.
 - `app/globals.css` controls the visual system.
-- `public/hero-workspace.png` is the generated hero image.
+- `components/void-sphere.tsx` controls the 3D hero visual.
+- `public/projects/` contains selected-work preview images.
 - `vercel.json.example` documents optional Vercel settings.
 
 ## What To Replace Next
 
-- `profile.email`
-- Experience entries
-- Featured projects
-- Project links
-- A real profile image or stronger personal visual asset
+- Add live case-study URLs when ready.
+- Set `NEXT_PUBLIC_SITE_URL` in Vercel once the production domain is chosen.

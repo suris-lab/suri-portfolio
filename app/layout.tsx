@@ -1,40 +1,49 @@
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
-import "./globals.css";
+import { Analytics } from '@vercel/analytics/next'
+import type { Metadata, Viewport } from 'next'
+import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
+import './globals.css'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const geistSans = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist-sans',
+})
+
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  variable: '--font-geist-mono',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  style: ['normal', 'italic'],
+})
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: "Suri Slai | Portfolio",
+  title: 'Shan Lai — Marketing Leader & Brand Strategist',
   description:
-    "A personal portfolio for Suri Slai, focused on product thinking, systems, and digital delivery.",
-  openGraph: {
-    title: "Suri Slai | Portfolio",
-    description:
-      "Product-minded builder focused on practical digital products, systems, and outcomes.",
-    images: [
-      {
-        url: "/hero-workspace.png",
-        width: 1536,
-        height: 1024,
-        alt: "Abstract dark workspace visual"
-      }
-    ]
-  }
-};
+    'Hong Kong-based marketing leader specializing in brand strategy, digital marketing, CRM, MarTech, cross-border communications, and regional execution.',
+}
+
+export const viewport: Viewport = {
+  colorScheme: 'dark',
+  themeColor: '#000000',
+}
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html
+      lang="en"
+      className={`dark ${geistSans.variable} ${geistMono.variable} ${playfair.variable}`}
+    >
+      <body className="grain bg-background font-sans antialiased">
         {children}
-        <Analytics />
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
-  );
+  )
 }
