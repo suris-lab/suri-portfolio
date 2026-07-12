@@ -1,7 +1,3 @@
-'use client'
-
-import Image from 'next/image'
-import { useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
 const projects = [
@@ -10,7 +6,6 @@ const projects = [
     title: 'PERSOL Greater China Marketing System',
     category: 'Regional Operations',
     year: '2024-25',
-    image: '/projects/rebrand.png',
     result: '8% cost reduction',
   },
   {
@@ -18,7 +13,6 @@ const projects = [
     title: 'APAC Website Revamp',
     category: 'Web / Analytics',
     year: '2023',
-    image: '/projects/website.png',
     result: '13 APAC regions',
   },
   {
@@ -26,7 +20,6 @@ const projects = [
     title: 'PERSOL Rebrand',
     category: 'Brand Governance',
     year: '2024',
-    image: '/projects/campaign.png',
     result: 'PERSOLKELLY to PERSOL',
   },
   {
@@ -34,14 +27,11 @@ const projects = [
     title: 'Membership Marketing Roadmap',
     category: 'Lifecycle / Automation',
     year: '2026',
-    image: '/projects/seo-growth.png',
     result: 'AI-assisted journey',
   },
 ]
 
 export function Projects() {
-  const [active, setActive] = useState<number | null>(null)
-
   return (
     <section
       id="works"
@@ -57,28 +47,11 @@ export function Projects() {
           </p>
         </div>
 
-        {/* Floating hover preview */}
-        {active !== null && (
-          <div className="pointer-events-none fixed right-10 top-1/2 z-40 hidden -translate-y-1/2 md:block">
-            <div className="relative h-64 w-96 overflow-hidden rounded-lg border border-border">
-              <Image
-                src={projects[active].image || '/placeholder.svg'}
-                alt={`${projects[active].title} preview`}
-                fill
-                className="object-cover"
-                sizes="384px"
-              />
-            </div>
-          </div>
-        )}
-
         <ul className="border-t border-border">
-          {projects.map((project, i) => (
+          {projects.map((project) => (
             <li key={project.title}>
               <a
                 href="#contact"
-                onMouseEnter={() => setActive(i)}
-                onMouseLeave={() => setActive(null)}
                 className="group grid grid-cols-[auto_1fr_auto] items-center gap-6 border-b border-border py-8 transition-colors hover:bg-card/40"
               >
                 <span className="font-mono text-xs text-primary">
