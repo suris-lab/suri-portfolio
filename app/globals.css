@@ -121,7 +121,7 @@
   .arsenal-track {
     display: inline-flex;
     min-width: max-content;
-    animation: arsenal-marquee-left 34s linear infinite;
+    animation: arsenal-marquee-left 68s linear infinite;
     will-change: transform;
   }
 
