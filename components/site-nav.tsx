@@ -5,8 +5,9 @@ import { useState } from 'react'
 const links = [
   { index: '01', label: 'About', href: '#about' },
   { index: '02', label: 'Works', href: '#works' },
-  { index: '03', label: 'Experience', href: '#experience' },
-  { index: '04', label: 'Contact', href: '#contact' },
+  { index: '03', label: 'Design', href: '#design' },
+  { index: '04', label: 'Experience', href: '#experience' },
+  { index: '05', label: 'Contact', href: '#contact' },
 ]
 
 export function SiteNav() {

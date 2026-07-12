@@ -45,7 +45,7 @@ export function Contact() {
     >
       <div className="mx-auto max-w-[1600px]">
         <p className="mb-12 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          06 — Contact
+          07 — Contact
         </p>
 
         <h2 className="font-serif text-[18vw] leading-[0.82] tracking-tight text-foreground sm:text-[15vw] lg:text-[12rem]">
