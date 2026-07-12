@@ -5,25 +5,21 @@ const designItems = [
   {
     title: 'Brand Communications / Corporate Branding',
     type: 'Art Direction / Retouch',
-    year: '2018',
-    image: '/design-archive/adidas-art-direction-2018.png',
+    image: '/design-archive/adidas-cover.png',
   },
   {
     title: 'Campaign Visual Direction & Idea Generation',
     type: 'Campaign / Event',
-    year: '2016',
     image: '/design-archive/tumi-40-anniversary-2016.jpg',
   },
   {
     title: 'Digital Experience Mockup',
     type: 'Digital / Content',
-    year: '2017',
     image: '/design-archive/nespresso-coffee-recipe.jpg',
   },
   {
     title: 'Growth Content Layout',
     type: 'Launch / PR',
-    year: '2017',
     image: '/design-archive/tfff-launch-event-2017.jpg',
   },
 ]
@@ -66,9 +62,8 @@ export function DesignGallery() {
               </div>
 
               <div className="space-y-4 p-5">
-                <div className="flex items-center justify-between gap-4 font-mono text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
+                <div className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
                   <span>{item.type}</span>
-                  <span>{item.year}</span>
                 </div>
                 <h3 className="font-serif text-2xl leading-tight text-foreground">
                   {item.title}
