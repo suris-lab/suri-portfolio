@@ -21,7 +21,7 @@ export function Hero() {
       {/* Top-left discipline */}
       <div className="pointer-events-none relative z-10 max-w-2xl">
         <p className="mb-4 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          01 — Hong Kong
+          Hong Kong
         </p>
         <h1 className="font-serif text-6xl leading-[0.9] tracking-tight text-foreground sm:text-7xl md:text-8xl">
           SHAN
@@ -50,7 +50,7 @@ export function Hero() {
 
         <div className="ml-auto max-w-md text-right">
           <p className="mb-3 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            02 — Craft
+            Craft
           </p>
           <h2 className="font-serif text-4xl leading-[0.9] tracking-tight text-foreground sm:text-5xl md:text-6xl">
           BRAND
