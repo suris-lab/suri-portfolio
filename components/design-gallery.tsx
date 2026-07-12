@@ -1,29 +1,30 @@
 import Image from 'next/image'
+import { ArrowUpRight } from 'lucide-react'
 
 const designItems = [
   {
-    title: 'Brand System Study',
-    type: 'Identity / Guidelines',
-    year: 'Placeholder',
-    image: '/projects/rebrand.png',
+    title: 'Brand Communications / Corporate Branding',
+    type: 'Art Direction / Retouch',
+    year: '2018',
+    image: '/design-archive/adidas-art-direction-2018.png',
   },
   {
-    title: 'Campaign Visual Direction',
-    type: 'Art Direction',
-    year: 'Placeholder',
-    image: '/projects/campaign.png',
+    title: 'Campaign Visual Direction & Idea Generation',
+    type: 'Campaign / Event',
+    year: '2016',
+    image: '/design-archive/tumi-40-anniversary-2016.jpg',
   },
   {
     title: 'Digital Experience Mockup',
-    type: 'Web / UI',
-    year: 'Placeholder',
-    image: '/projects/website.png',
+    type: 'Digital / Content',
+    year: '2017',
+    image: '/design-archive/nespresso-coffee-recipe.jpg',
   },
   {
     title: 'Growth Content Layout',
-    type: 'Editorial / SEO',
-    year: 'Placeholder',
-    image: '/projects/seo-growth.png',
+    type: 'Launch / PR',
+    year: '2017',
+    image: '/design-archive/tfff-launch-event-2017.jpg',
   },
 ]
 
@@ -75,6 +76,18 @@ export function DesignGallery() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-end">
+          <a
+            href="https://drive.google.com/drive/folders/1UisGqbCRL_-Tdv25JTl7uMTBjJftNcLP?usp=drive_link"
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex items-center gap-3 border border-border bg-card/30 px-5 py-3 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition hover:border-primary hover:bg-primary hover:text-primary-foreground"
+          >
+            Learn More
+            <ArrowUpRight className="size-4 transition-transform group-hover:rotate-45" />
+          </a>
         </div>
       </div>
     </section>
