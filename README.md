@@ -9,6 +9,7 @@ Content is component-local:
 - `components/about.tsx` for positioning, disciplines, and stats
 - `components/projects.tsx` for selected work
 - `components/design-gallery.tsx` for placeholder design samples
+- `components/technical-arsenal.tsx` for CV-backed hard skills
 - `components/experience.tsx` for career history
 - `components/contact.tsx` for contact links and the mailto form
 - `components/hero.tsx` for the opening hero copy

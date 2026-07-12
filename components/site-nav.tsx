@@ -6,8 +6,9 @@ const links = [
   { index: '01', label: 'About', href: '#about' },
   { index: '02', label: 'Works', href: '#works' },
   { index: '03', label: 'Design', href: '#design' },
-  { index: '04', label: 'Experience', href: '#experience' },
-  { index: '05', label: 'Contact', href: '#contact' },
+  { index: '04', label: 'Arsenal', href: '#arsenal' },
+  { index: '05', label: 'Experience', href: '#experience' },
+  { index: '06', label: 'Contact', href: '#contact' },
 ]
 
 export function SiteNav() {
@@ -18,13 +19,13 @@ export function SiteNav() {
       <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-6 md:px-10">
         <a
           href="#top"
-          className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-foreground"
+          className="flex whitespace-nowrap items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-foreground"
         >
           Shan Lai
           <span className="size-1.5 rounded-full bg-primary" />
         </a>
 
-        <ul className="hidden items-center gap-7 md:flex">
+        <ul className="hidden items-center gap-5 md:flex xl:gap-7">
           {links.map((link) => (
             <li key={link.label}>
               <a
@@ -39,7 +40,7 @@ export function SiteNav() {
         </ul>
 
         <div className="flex items-center gap-4">
-          <div className="hidden items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground sm:flex">
+          <div className="hidden whitespace-nowrap items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground xl:flex">
             <span className="relative flex size-1.5">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex size-1.5 rounded-full bg-primary" />
