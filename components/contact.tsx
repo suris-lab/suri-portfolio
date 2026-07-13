@@ -22,14 +22,14 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative border-t border-border px-6 py-28 md:px-10"
+      className="contact-blue-field relative overflow-hidden border-t border-border px-6 py-28 md:px-10"
     >
-      <div className="mx-auto max-w-[1600px]">
+      <div className="relative z-10 mx-auto max-w-[1600px]">
         <p className="mb-12 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
           06 — Contact
         </p>
 
-        <h2 className="font-serif text-[18vw] leading-[0.82] tracking-tight text-foreground sm:text-[15vw] lg:text-[12rem]">
+        <h2 className="contact-title font-serif text-[18vw] leading-[0.82] tracking-tight text-foreground transition-colors duration-700 sm:text-[15vw] lg:text-[12rem]">
           LET&apos;S
           <br />
           <span className="italic">TALK</span>
