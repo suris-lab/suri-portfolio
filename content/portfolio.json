@@ -1,17 +1,41 @@
 {
   "site": {
     "name": "Shan Lai",
-    "availability": "Available for work",
+    "availability": "READY",
     "copyright": "Shan Lai — All rights reserved",
     "backToTop": "Back to top ↑"
   },
   "nav": [
-    { "index": "01", "label": "About", "href": "#about" },
-    { "index": "02", "label": "Works", "href": "#works" },
-    { "index": "03", "label": "Design", "href": "#design" },
-    { "index": "04", "label": "Arsenal", "href": "#arsenal" },
-    { "index": "05", "label": "Experience", "href": "#experience" },
-    { "index": "06", "label": "Contact", "href": "#contact" }
+    {
+      "index": "01",
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "index": "02",
+      "label": "Works",
+      "href": "#works"
+    },
+    {
+      "index": "03",
+      "label": "Design",
+      "href": "#design"
+    },
+    {
+      "index": "04",
+      "label": "Arsenal",
+      "href": "#arsenal"
+    },
+    {
+      "index": "05",
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "index": "06",
+      "label": "Contact",
+      "href": "#contact"
+    }
   ],
   "hero": {
     "location": "Hong Kong",
@@ -33,9 +57,18 @@
       "Most recently I led marketing for Greater China at PERSOL APAC and now head marketing and membership at Hebe Haven Yacht Club. My edge is range — brand governance in the morning, analytics and SEO at noon, and AI-assisted automation to scale the system."
     ],
     "stats": [
-      { "value": "15+", "label": "Years experience" },
-      { "value": "13", "label": "APAC regions" },
-      { "value": "8%", "label": "Annual cost reduction" }
+      {
+        "value": "15+",
+        "label": "Years experience"
+      },
+      {
+        "value": "13",
+        "label": "APAC regions"
+      },
+      {
+        "value": "8%",
+        "label": "Annual cost reduction"
+      }
     ],
     "disciplines": [
       {
