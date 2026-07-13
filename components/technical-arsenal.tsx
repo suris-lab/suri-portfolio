@@ -1,40 +1,9 @@
-const arsenalRows = [
-  [
-    'Photoshop',
-    'Illustrator',
-    'InDesign',
-    'Figma',
-    'Canva',
-    'Premiere Pro',
-    'After Effects',
-    'WordPress',
-    'Bootstrap',
-    'GA4',
-    'GTM',
-    'Looker Studio',
-    'Mailchimp',
-    'MikeX CRM',
-    'n8n',
-    'AEO',
-  ],
-  [
-    'Brand Systems',
-    'Digital Growth',
-    'CRM Automation',
-    'SEO',
-    'SEM',
-    'Analytics',
-    'Event Marketing',
-    'Sponsorships',
-    'Award Submissions',
-    'Cross-Border Comms',
-    'Budget Forecasting',
-    'AI Workflows',
-    'Team Leadership',
-  ],
-]
+type ArsenalContent = {
+  label: string
+  rows: string[][]
+}
 
-export function TechnicalArsenal() {
+export function TechnicalArsenal({ content }: { content: ArsenalContent }) {
   return (
     <section
       id="arsenal"
@@ -43,12 +12,12 @@ export function TechnicalArsenal() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-12">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            04 — Technical Arsenal
+            {content.label}
           </p>
         </div>
 
         <div className="space-y-4 overflow-hidden border-y border-border py-8">
-          {arsenalRows.map((items, index) => (
+          {content.rows.map((items, index) => (
             <div
               key={items[0]}
               className="arsenal-marquee"

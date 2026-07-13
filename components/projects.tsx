@@ -1,37 +1,19 @@
 import { ArrowUpRight } from 'lucide-react'
 
-const projects = [
-  {
-    no: '01',
-    title: 'PERSOL Greater China Marketing System',
-    category: 'Regional Operations',
-    year: '2024-25',
-    result: '8% cost reduction',
-  },
-  {
-    no: '02',
-    title: 'APAC Website Revamp',
-    category: 'Web / Analytics',
-    year: '2023',
-    result: '13 APAC regions',
-  },
-  {
-    no: '03',
-    title: 'PERSOL Rebrand',
-    category: 'Brand Governance',
-    year: '2024',
-    result: 'PERSOLKELLY to PERSOL',
-  },
-  {
-    no: '04',
-    title: 'Membership Marketing Roadmap',
-    category: 'Lifecycle / Automation',
-    year: '2026',
-    result: 'AI-assisted journey',
-  },
-]
+type ProjectsContent = {
+  label: string
+  summary: string
+  items: Array<{
+    no: string
+    title: string
+    category: string
+    year: string
+    result: string
+    href: string
+  }>
+}
 
-export function Projects() {
+export function Projects({ content }: { content: ProjectsContent }) {
   return (
     <section
       id="works"
@@ -40,18 +22,18 @@ export function Projects() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-16 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            02 — Selected Works
+            {content.label}
           </p>
           <p className="max-w-xs font-mono text-xs uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
-            Brand, CRM, analytics, and integrated growth across regional organizations.
+            {content.summary}
           </p>
         </div>
 
         <ul className="border-t border-border">
-          {projects.map((project) => (
+          {content.items.map((project) => (
             <li key={project.title}>
               <a
-                href="#contact"
+                href={project.href}
                 className="group grid grid-cols-[auto_1fr_auto] items-center gap-6 border-b border-border py-8 transition-colors hover:bg-card/40"
               >
                 <span className="font-mono text-xs text-primary">

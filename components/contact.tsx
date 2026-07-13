@@ -1,24 +1,14 @@
 import { ArrowUpRight } from 'lucide-react'
 
-const socials = [
-  {
-    label: 'LinkedIn',
-    handle: '/in/surislai',
-    href: 'https://www.linkedin.com/in/surislai/',
-  },
-  {
-    label: 'Email',
-    handle: 'shan@60.com.hk',
-    href: 'mailto:shan@60.com.hk',
-  },
-  {
-    label: 'Location',
-    handle: 'Hong Kong',
-    href: '#top',
-  },
-]
+type ContactContent = {
+  label: string
+  headlineLine1: string
+  headlineLine2: string
+  intro: string
+  links: Array<{ label: string; handle: string; href: string }>
+}
 
-export function Contact() {
+export function Contact({ content }: { content: ContactContent }) {
   return (
     <section
       id="contact"
@@ -26,24 +16,22 @@ export function Contact() {
     >
       <div className="relative z-10 mx-auto max-w-[1600px]">
         <p className="mb-12 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          06 — Contact
+          {content.label}
         </p>
 
         <h2 className="contact-title font-serif text-[18vw] leading-[0.82] tracking-tight text-foreground transition-colors duration-700 sm:text-[15vw] lg:text-[12rem]">
-          LET&apos;S
+          {content.headlineLine1}
           <br />
-          <span className="italic">TALK</span>
+          <span className="italic">{content.headlineLine2}</span>
         </h2>
 
         <div className="mt-16 grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <p className="max-w-md text-pretty leading-relaxed text-muted-foreground">
-            Whether you&apos;re looking for a marketing leader, a brand and
-            digital growth partner, or a collaborator on a regional launch, I&apos;d
-            love to hear from you.
+            {content.intro}
           </p>
 
           <ul className="divide-y divide-border border-y border-border">
-            {socials.map((s) => (
+            {content.links.map((s) => (
               <li key={s.label}>
                 <a
                   href={s.href}

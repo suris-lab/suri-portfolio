@@ -8,20 +8,23 @@ import { Experience } from '@/components/experience'
 import { Contact } from '@/components/contact'
 import { SiteFooter } from '@/components/site-footer'
 import { SmoothScroll } from '@/components/smooth-scroll'
+import { getPortfolioContent } from '@/lib/portfolio-content'
 
 export default function Page() {
+  const content = getPortfolioContent()
+
   return (
     <main className="min-h-screen">
       <SmoothScroll />
-      <SiteNav />
-      <Hero />
-      <About />
-      <Projects />
-      <DesignGallery />
-      <TechnicalArsenal />
-      <Experience />
-      <Contact />
-      <SiteFooter />
+      <SiteNav site={content.site} links={content.nav} />
+      <Hero content={content.hero} />
+      <About content={content.about} />
+      <Projects content={content.projects} />
+      <DesignGallery content={content.design} />
+      <TechnicalArsenal content={content.arsenal} />
+      <Experience content={content.experience} />
+      <Contact content={content.contact} />
+      <SiteFooter site={content.site} />
     </main>
   )
 }

@@ -1,30 +1,16 @@
 import Image from 'next/image'
 import { ArrowUpRight } from 'lucide-react'
 
-const designItems = [
-  {
-    title: 'Brand Communications / Corporate Branding',
-    type: 'Art Direction / Retouch',
-    image: '/design-archive/adidas-cover.png',
-  },
-  {
-    title: 'Campaign Visual Direction & Idea Generation',
-    type: 'Campaign / Event',
-    image: '/design-archive/tumi-40-anniversary-2016.jpg',
-  },
-  {
-    title: 'Digital Experience Mockup',
-    type: 'Digital / Content',
-    image: '/design-archive/nespresso-coffee-recipe.jpg',
-  },
-  {
-    title: 'Growth Content Layout',
-    type: 'Launch / PR',
-    image: '/design-archive/tfff-launch-event-2017.jpg',
-  },
-]
+type DesignContent = {
+  label: string
+  heading: string
+  headingItalic: string
+  learnMoreLabel: string
+  learnMoreHref: string
+  items: Array<{ title: string; type: string; image: string }>
+}
 
-export function DesignGallery() {
+export function DesignGallery({ content }: { content: DesignContent }) {
   return (
     <section
       id="design"
@@ -33,16 +19,18 @@ export function DesignGallery() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-16 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            03 — Design Archive
+            {content.label}
           </p>
           <h2 className="max-w-3xl font-serif text-4xl leading-[1] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Visual craft, ready for{' '}
-            <span className="italic text-muted-foreground">real case images.</span>
+            {content.heading}{' '}
+            <span className="italic text-muted-foreground">
+              {content.headingItalic}
+            </span>
           </h2>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {designItems.map((item, index) => (
+          {content.items.map((item, index) => (
             <article
               key={item.title}
               className="group overflow-hidden border border-border bg-card/30"
@@ -75,12 +63,12 @@ export function DesignGallery() {
 
         <div className="mt-12 flex justify-end">
           <a
-            href="https://drive.google.com/drive/folders/1UisGqbCRL_-Tdv25JTl7uMTBjJftNcLP?usp=drive_link"
+            href={content.learnMoreHref}
             target="_blank"
             rel="noreferrer"
             className="group inline-flex items-center gap-3 border border-border bg-card/30 px-5 py-3 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition hover:border-primary hover:bg-primary hover:text-primary-foreground"
           >
-            Learn More
+            {content.learnMoreLabel}
             <ArrowUpRight className="size-4 transition-transform group-hover:rotate-45" />
           </a>
         </div>

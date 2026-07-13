@@ -1,0 +1,275 @@
+{
+  "site": {
+    "name": "Shan Lai",
+    "availability": "Available for work",
+    "copyright": "Shan Lai — All rights reserved",
+    "backToTop": "Back to top ↑"
+  },
+  "nav": [
+    { "index": "01", "label": "About", "href": "#about" },
+    { "index": "02", "label": "Works", "href": "#works" },
+    { "index": "03", "label": "Design", "href": "#design" },
+    { "index": "04", "label": "Arsenal", "href": "#arsenal" },
+    { "index": "05", "label": "Experience", "href": "#experience" },
+    { "index": "06", "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "location": "Hong Kong",
+    "firstName": "SHAN",
+    "lastName": "LAI",
+    "ctaLabel": "Explore Work",
+    "ctaHref": "#works",
+    "scrollLabel": "Scroll",
+    "craftLabel": "Craft",
+    "headlineLine1": "BRAND",
+    "headlineLine2": "STRATEGIST"
+  },
+  "about": {
+    "label": "01 — About",
+    "heading": "Creative instincts,",
+    "headingItalic": "backed by data.",
+    "paragraphs": [
+      "I'm a Hong Kong-based marketing leader with over a decade across advertising, media, multinational environments, brand strategy, digital marketing, and cross-border communications. I began as a designer and creative director, then grew into regional marketing leadership at global recruitment and HR groups.",
+      "Most recently I led marketing for Greater China at PERSOL APAC and now head marketing and membership at Hebe Haven Yacht Club. My edge is range — brand governance in the morning, analytics and SEO at noon, and AI-assisted automation to scale the system."
+    ],
+    "stats": [
+      { "value": "15+", "label": "Years experience" },
+      { "value": "13", "label": "APAC regions" },
+      { "value": "8%", "label": "Annual cost reduction" }
+    ],
+    "disciplines": [
+      {
+        "no": "01",
+        "title": "Brand Strategy",
+        "description": "Brand guidelines, positioning, visual identity, and governance that help teams move in one direction."
+      },
+      {
+        "no": "02",
+        "title": "Digital Growth",
+        "description": "SEO, content, social, analytics, and regional website programs built for measurable execution."
+      },
+      {
+        "no": "03",
+        "title": "Regional Leadership",
+        "description": "Hands-on marketing leadership across China, Hong Kong, Taiwan, and broader APAC teams."
+      },
+      {
+        "no": "04",
+        "title": "AI Automation",
+        "description": "An advocate for AI-assisted workflows and marketing automation that free teams to focus on strategy and craft."
+      }
+    ]
+  },
+  "projects": {
+    "label": "02 — Selected Works",
+    "summary": "Brand, CRM, analytics, and integrated growth across regional organizations.",
+    "items": [
+      {
+        "no": "01",
+        "title": "PERSOL Greater China Marketing System",
+        "category": "Regional Operations",
+        "year": "2024-25",
+        "result": "8% cost reduction",
+        "href": "#contact"
+      },
+      {
+        "no": "02",
+        "title": "APAC Website Revamp",
+        "category": "Web / Analytics",
+        "year": "2023",
+        "result": "13 APAC regions",
+        "href": "#contact"
+      },
+      {
+        "no": "03",
+        "title": "PERSOL Rebrand",
+        "category": "Brand Governance",
+        "year": "2024",
+        "result": "PERSOLKELLY to PERSOL",
+        "href": "#contact"
+      },
+      {
+        "no": "04",
+        "title": "Membership Marketing Roadmap",
+        "category": "Lifecycle / Automation",
+        "year": "2026",
+        "result": "AI-assisted journey",
+        "href": "#contact"
+      }
+    ]
+  },
+  "design": {
+    "label": "03 — Design Archive",
+    "heading": "Visual craft, ready for",
+    "headingItalic": "real case images.",
+    "learnMoreLabel": "Learn More",
+    "learnMoreHref": "https://drive.google.com/drive/folders/1UisGqbCRL_-Tdv25JTl7uMTBjJftNcLP?usp=drive_link",
+    "items": [
+      {
+        "title": "Brand Communications / Corporate Branding",
+        "type": "Art Direction / Retouch",
+        "image": "/design-archive/adidas-cover.png"
+      },
+      {
+        "title": "Campaign Visual Direction & Idea Generation",
+        "type": "Campaign / Event",
+        "image": "/design-archive/tumi-40-anniversary-2016.jpg"
+      },
+      {
+        "title": "Digital Experience Mockup",
+        "type": "Digital / Content",
+        "image": "/design-archive/nespresso-coffee-recipe.jpg"
+      },
+      {
+        "title": "Growth Content Layout",
+        "type": "Launch / PR",
+        "image": "/design-archive/tfff-launch-event-2017.jpg"
+      }
+    ]
+  },
+  "arsenal": {
+    "label": "04 — Technical Arsenal",
+    "rows": [
+      [
+        "Photoshop",
+        "Illustrator",
+        "InDesign",
+        "Figma",
+        "Canva",
+        "Premiere Pro",
+        "After Effects",
+        "WordPress",
+        "Bootstrap",
+        "GA4",
+        "GTM",
+        "Looker Studio",
+        "Mailchimp",
+        "MikeX CRM",
+        "n8n",
+        "AEO"
+      ],
+      [
+        "Brand Systems",
+        "Digital Growth",
+        "CRM Automation",
+        "SEO",
+        "SEM",
+        "Analytics",
+        "Event Marketing",
+        "Sponsorships",
+        "Award Submissions",
+        "Cross-Border Comms",
+        "Budget Forecasting",
+        "AI Workflows",
+        "Team Leadership"
+      ]
+    ]
+  },
+  "experience": {
+    "label": "05 — Experience",
+    "heading": "From design craft to",
+    "headingItalic": "marketing lead.",
+    "roles": [
+      {
+        "period": "Dec 2025 — Present",
+        "role": "Head of Membership & Marketing",
+        "company": "Hebe Haven Yacht Club",
+        "location": "Hong Kong",
+        "points": [
+          "Developed comprehensive brand guidelines covering visual identity, core values, and cross-department positioning.",
+          "Reengineered marketing processes into a clearer communication roadmap across the full member journey.",
+          "Leverage AI and automation to improve alignment, consistency, and conversion discipline."
+        ]
+      },
+      {
+        "period": "Jan 2024 — Nov 2025",
+        "role": "Head of Marketing, Greater China",
+        "company": "PERSOL",
+        "location": "Greater China",
+        "points": [
+          "Unified marketing teams across China, Hong Kong, and Taiwan to strengthen regional synergy and shared resource efficiency.",
+          "Optimized vendors, CRM, and forecasting to achieve 8% annual cost reduction and 25% headcount streamlining within one year.",
+          "Spearheaded the PERSOLKELLY to PERSOL rebrand, renewing marketing materials as brand gatekeeper."
+        ]
+      },
+      {
+        "period": "Jun 2023 — Jan 2024",
+        "role": "Regional Marketing Specialist — Digital",
+        "company": "PERSOL",
+        "location": "APAC",
+        "points": [
+          "Managed a large-scale website revamp across 13 APAC regions with consistent branding, UX, and content delivery.",
+          "Supported UA to GA4 migration and Google Tag Manager setup for accurate analytics and tracking.",
+          "Provided visual design guidance and digital support to APAC marketing teams."
+        ]
+      },
+      {
+        "period": "Nov 2020 — Jun 2023",
+        "role": "Marketing Manager",
+        "company": "PERSOLKELLY",
+        "location": "Hong Kong",
+        "points": [
+          "Drove communications strategy and supported headquarters in delivering strategic priorities.",
+          "Gatekept brand content for accuracy, consistency, and tone across initiatives.",
+          "Oversaw marketing budget, digital ad spend, and social campaign performance. MVP Award 2021."
+        ]
+      },
+      {
+        "period": "2017 — 2020",
+        "role": "Creative Director",
+        "company": "My Miracle",
+        "location": "Hong Kong",
+        "points": [
+          "Directed conceptual design, graphic design, and artwork production.",
+          "Owned design and packaging for product catalogs, booklets, packaging, print advertising, and outdoor media.",
+          "Worked with agencies, partners, production houses, and internal teams to launch marketing campaigns."
+        ]
+      },
+      {
+        "period": "Sep 2016 — Nov 2020",
+        "role": "Senior Marketing Executive / Design Consultant",
+        "company": "Diamond Sky Group",
+        "location": "Hong Kong",
+        "points": [
+          "Built content strategy to improve brand awareness, digital experience, traffic, and conversion.",
+          "Developed UI/UX strategy for overseas subsidiaries, aligning platforms with global brand standards.",
+          "Set digital and social campaign direction with design and content teams."
+        ]
+      },
+      {
+        "period": "2010 — 2016",
+        "role": "Creative Director / Art Director / Multimedia Designer",
+        "company": "Tencent CQ.QQ · Macintosh & Lee · Media Explorer",
+        "location": "Hong Kong / China",
+        "points": [
+          "Led creative and art direction across FMCG, tourism, advertising, and digital media.",
+          "Partnered with product, marketing, and content teams for major clients including Master Kong, Coca-Cola x Asus, and Snow Beer.",
+          "Built the design foundation that grew into marketing leadership."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "label": "06 — Contact",
+    "headlineLine1": "LET'S",
+    "headlineLine2": "TALK",
+    "intro": "Whether you're looking for a marketing leader, a brand and digital growth partner, or a collaborator on a regional launch, I'd love to hear from you.",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "handle": "/in/surislai",
+        "href": "https://www.linkedin.com/in/surislai/"
+      },
+      {
+        "label": "Email",
+        "handle": "shan@60.com.hk",
+        "href": "mailto:shan@60.com.hk"
+      },
+      {
+        "label": "Location",
+        "handle": "Hong Kong",
+        "href": "#top"
+      }
+    ]
+  }
+}

@@ -1,17 +1,17 @@
 'use client'
 
 import { useState } from 'react'
+import type { NavLink } from '@/lib/portfolio-content'
 
-const links = [
-  { index: '01', label: 'About', href: '#about' },
-  { index: '02', label: 'Works', href: '#works' },
-  { index: '03', label: 'Design', href: '#design' },
-  { index: '04', label: 'Arsenal', href: '#arsenal' },
-  { index: '05', label: 'Experience', href: '#experience' },
-  { index: '06', label: 'Contact', href: '#contact' },
-]
+type SiteNavProps = {
+  site: {
+    name: string
+    availability: string
+  }
+  links: NavLink[]
+}
 
-export function SiteNav() {
+export function SiteNav({ site, links }: SiteNavProps) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -21,7 +21,7 @@ export function SiteNav() {
           href="#top"
           className="flex whitespace-nowrap items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-foreground"
         >
-          Shan Lai
+          {site.name}
           <span className="size-1.5 rounded-full bg-primary" />
         </a>
 
@@ -45,7 +45,7 @@ export function SiteNav() {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex size-1.5 rounded-full bg-primary" />
             </span>
-            <span>Available for work</span>
+            <span>{site.availability}</span>
           </div>
 
           <button
